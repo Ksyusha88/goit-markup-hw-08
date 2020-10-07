@@ -1,4 +1,43 @@
+.logo{
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 0.85;
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+    
+    &-header{
+        color: #2196F3;
+    }
 
+    &-footer{
+        text-decoration: none;
+        font-family: Raleway, sans-serif;
+        color:  #FFFFFF;
+        font-weight: 700;
+        font-size: 26px;
+        inline-size: 1.2;
+        line-height: 28px;
+        margin: 0px;
+        }
+}
+
+.fotter-logo {
+    color: #2196F3;
+ }
+ 
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px){
 .logo{
     color: #000000;
     text-decoration: none;
@@ -30,3 +69,4 @@
 .fotter-logo {
     color: #2196F3;
  }
+}
