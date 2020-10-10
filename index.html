@@ -8,36 +8,48 @@
     <link rel="stylesheet" href="./css/main.min.css"/>
     <link rel="stylesheet" href="./normalize.css"/>
 </head>
-<body >
+<body >  
     <header class="page-header">
     <div class="header-container">  
-    <nav class="navigation">   
-        <a href=""class="logo"><span class="logo-header">Web</span>Studio</a>
-        <ul class="site-nav">
-          <li class="site-nav__item">
-              <a href=""class="site-nav__link current">Студия</a>
-            </li>
-          <li class="site-nav__item">
-              <a href="./portfolio.html"class="site-nav__link">Портфолио</a>
-            </li>
-          <li class="site-nav__item">
-              <a href=""class="site-nav__link">Контакты</a>
-            </li> -->
-        </ul>
-    </nav>
-        <ul class="site-adress"> 
-            <li class="site-adress__item">
-                <a class="site-adress__link mail adress-item" href="mailto:info@devstudio.com">
-                    <svg class="site-adress__icon" width="16px" height="12px" ><use href="./image/иконки/sprite(1).svg#конверт"></use></svg>info@devstudio.com
-                </a>
-            </li>
+            <nav class="navigation">   
+                <a href=""class="logo"><span class="logo-header">Web</span>Studio</a>
+                <button type="button" class="button-burger"
+                        aria-expanded="false"
+                        data-menu-button>
+                    <svg widht="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use  class="icon-close" href="./image/sprite-burger.svg#close_menu"></use>
+                        <use class="icon-menu" href="./image/sprite-burger.svg#menu"></use>
+                    </svg>
+                </button>
+                <div class="menu-container" data-menu>Меню
+                    <ul class="site-nav">
+                        <li class="site-nav__item">
+                            <a href=""class="site-nav__link current">Студия</a>
+                            </li>
+                        <li class="site-nav__item">
+                            <a href="./portfolio.html"class="site-nav__link">Портфолио</a>
+                            </li>
+                        <li class="site-nav__item">
+                            <a href=""class="site-nav__link">Контакты</a>
+                            </li>
+                    </ul>
+                
+                
+                    <ul class="site-adress"> 
+                        <li class="site-adress__item">
+                            <a class="site-adress__link mail adress-item" href="mailto:info@devstudio.com">
+                                <svg class="site-adress__icon" width="16px" height="12px" ><use href="./image/иконки/sprite(1).svg#конверт"></use></svg>info@devstudio.com
+                            </a>
+                        </li>
 
-            <li class="site-adress__item">
-                <a class="site-adress__link tell adress-item" href="+38-096-111-11-11">
-                    <svg class="site-adress__icon" width="10px" height="15px" ><use href="./image/иконки/sprite(1).svg#смартфон"></use></svg>+38(096)111 11 11
-                </a>
-            </li>
-        </ul>
+                        <li class="site-adress__item">
+                            <a class="site-adress__link tell adress-item" href="+38-096-111-11-11">
+                                <svg class="site-adress__icon" width="10px" height="15px" ><use href="./image/иконки/sprite(1).svg#смартфон"></use></svg>+38(096)111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
     </div>
     </header>
     

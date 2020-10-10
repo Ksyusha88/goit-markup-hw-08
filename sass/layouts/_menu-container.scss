@@ -1,0 +1,15 @@
+.menu-container{
+    display: none;
+    position: absolute;
+    top:100;
+    left: 0;
+    width: 100%;
+    // background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    background-color: salmon;
+
+    &.is-open{
+    display: block;
+    }
+}

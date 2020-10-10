@@ -1,29 +1,66 @@
-.site-header{
-    max-width: 1600px;
-    height: 600px;
-    background-color: #c4c4c4;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%),url(../image/герой.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
+    .site-header{
+        height: 400px;
+        background-color: #c4c4c4;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%),url(../image/герой.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 
 
-&__text{
-    margin-top: 0px;
-    margin-bottom: 30px;
-    font-family: Roboto;
-    text-align: center;
-    font-style: normal;
-    color: #FFFFFF;
-    font-size: 44px;
-    line-height: 1.36;
-    font-weight: 900;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    } 
+    &__text{
+        margin-top: 0px;
+        margin-bottom: 30px;
+        font-family: Roboto;
+        text-align: center;
+        font-style: normal;
+        color: #FFFFFF;
+        font-size: 26px;
+        line-height: 1.6;
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        } 
+    }
+
+
+
+
+
+
+@media screen and (min-width: 1200px){
+    .site-header{
+        max-width: 1600px;
+        height: 600px;
+        background-color: #c4c4c4;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%),url(../image/герой.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+
+    &__text{
+        margin-top: 0px;
+        margin-bottom: 30px;
+        font-family: Roboto;
+        text-align: center;
+        font-style: normal;
+        color: #FFFFFF;
+        font-size: 44px;
+        line-height: 1.36;
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        } 
+    }
 }

@@ -1,8 +1,21 @@
+@media screen and (min-width: 480px){
+    width: 480px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: flex-end;
+    margin: 0px;
+}
+
+
+
+
+@media screen and (min-width: 768px){
 .navigation {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-right: auto;
+    margin-right: 0;
+    }
 }
 
 .site-nav {
@@ -16,7 +29,10 @@
     line-height: 16px;
     letter-spacing: 0.02em;
     color: #212121;
-
+    
+    @media screen and (max-width: 767px){
+        display: none;
+    }
 
 &__item:not(:last-child){
     margin-right: 50px;
