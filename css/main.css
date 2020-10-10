@@ -42,6 +42,12 @@ li {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 480px) {
+  .backdrop {
+    overflow-y: scroll;
+  }
+}
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -59,6 +65,10 @@ li {
   right: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  display: none;
+}
+
 .button-burger .icon-close {
   display: none;
 }
@@ -69,6 +79,11 @@ li {
 
 .button-burger.is-open .icon-menu {
   display: none;
+}
+
+.button-burger :hover,
+.button-burger :focus {
+  fill: #2196F3;
 }
 
 .site-header__button {
@@ -145,8 +160,21 @@ li {
   color: #757575;
 }
 
+@media screen and (min-width: 480px) {
+  .site-adress {
+    display: block;
+    margin-bottom: 60px;
+  }
+}
+
 .site-adress__item:not(:last-child) {
   margin-right: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .site-adress__item:not(:last-child) {
+    margin: 0px;
+  }
 }
 
 .site-adress__link {
@@ -162,18 +190,22 @@ li {
           transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 480px) {
+  .site-adress__link {
+    margin-top: 0px;
+    margin-bottom: 16px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .site-adress__link .site-adress__icon {
   display: block;
   margin-right: 10px;
   fill: #757575;
   -webkit-transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
           transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (max-width: 767px) {
-  .site-adress {
-    display: none;
-  }
 }
 
 .adress-item:hover {
@@ -600,11 +632,6 @@ textarea {
   }
 }
 
-@media screen and (min-width: 480px) {
-  width: 480px;
-  margin: 0px;
-}
-
 @media screen and (min-width: 768px) {
   .navigation {
     display: -webkit-box;
@@ -637,12 +664,11 @@ textarea {
 
 @media screen and (max-width: 767px) {
   .site-nav {
-    display: none;
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 28px;
   }
-}
-
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .site-nav__link {
@@ -658,17 +684,41 @@ textarea {
           transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 480px) {
+  .site-nav__link {
+    margin-top: 0px;
+    text-align: center;
+  }
+}
+
 .site-nav__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: #757575;
   font-style: normal;
-  /* margin-left: 0px; */
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   padding-left: 0px;
+}
+
+@media screen and (min-width: 480px) {
+  .site-nav__item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.site-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+@media screen and (min-width: 480px) {
+  .site-nav__item:not(:last-child) {
+    margin: 0px;
+  }
 }
 
 .current::after {
@@ -679,6 +729,12 @@ textarea {
   background-color: #2196F3;
   left: 0;
   bottom: -20px;
+}
+
+@media screen and (min-width: 480px) {
+  .current::after {
+    bottom: -10px;
+  }
 }
 
 .site-nav.current {
@@ -736,7 +792,6 @@ textarea {
 
 @media screen and (min-width: 480px) {
   .page-header {
-    width: 480px;
     position: relative;
     margin: 0px;
   }
@@ -1620,18 +1675,20 @@ textarea {
   }
 }
 
-.menu-container {
-  display: none;
-  position: absolute;
-  top: 100;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  background-color: salmon;
-}
-
-.menu-container.is-open {
-  display: block;
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    text-align: center;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+  .menu-container.is-open {
+    display: block;
+  }
 }
 /*# sourceMappingURL=main.css.map */
