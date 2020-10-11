@@ -5,6 +5,11 @@
     margin-right: auto;
     margin-left: auto;
 
+@media screen and (max-width: 479px){
+    width: auto;
+}
+
+
 @media screen and (min-width: 480px){
         width: 480px;
     }
@@ -18,12 +23,25 @@
 }          
 
 .conteiner-portfolio{
-    width: 1170px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 94px;
-    margin-bottom: 94px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+
+@media screen and (max-width: 767px){
+        // width: 480px;
+        margin-top: 60px;
+        margin-bottom:60px;
+    }
+
+@media screen and (min-width: 768px){
+    width: 768px;
+}
+@media screen and (min-width: 1200px){
+    width: 1200px;
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
     }

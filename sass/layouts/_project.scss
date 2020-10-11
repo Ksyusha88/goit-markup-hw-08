@@ -10,9 +10,13 @@
 .project__item{
         margin-right: 30px;
         margin-bottom: 30px;
-        /* flex-basis: calc((100% - 3 * 30px) / 3); */
         width: calc((100% - 30px * 2) / 3);
         border: 1px solid #EEEEEE;
+
+        @media screen and (max-width: 767px){
+            width: 480px;
+            margin-right: 0px;
+        }   
 
 
     &:nth-child(3n){
@@ -29,6 +33,7 @@
     background: #FFFFFF;
     box-sizing: border-box;
     text-align: left;
+    
 }
 
 .project-name{

@@ -3,7 +3,8 @@
     padding-right: 10px;
     padding-top: 16px;
     padding-bottom: 16px;
-    @media screen and (min-width: 480px){
+    border-block-end:1px solid #ECECEC;
+    @media screen and (max-width: 767px){
         position: relative;
         margin:0px;
         }
