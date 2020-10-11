@@ -9,9 +9,10 @@
         padding: 0px;
         top: 0px;
         right: 15px;
-    }
-    @media screen and (min-width: 768px){
-        display: none;
+   
+        @media screen and (min-width: 768px){
+            display: none;
+        }
     }
         
         .button-burger .icon-close{

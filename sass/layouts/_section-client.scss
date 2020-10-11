@@ -1,5 +1,8 @@
 .section-clients{
     padding-top: 60px;
+    @media screen and (min-width: 768px){
+        padding-bottom: 60px;
+    }
 }
 .client-brand{
     display: flex;
@@ -21,14 +24,6 @@
     width: 210px;
     height: 90px;
     transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    
-    
-
-
-    // &:not(:last-child){
-    //     margin-right: 30px;
-    // }
 
     &:hover,
     &:focus
