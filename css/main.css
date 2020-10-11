@@ -1046,9 +1046,9 @@ textarea {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .conteiner {
-    width: 480px;
+    width: 768px;
   }
 }
 
@@ -1220,7 +1220,7 @@ textarea {
   margin-left: 10px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .fotter {
     margin-top: 0px;
     padding-top: 0px;
