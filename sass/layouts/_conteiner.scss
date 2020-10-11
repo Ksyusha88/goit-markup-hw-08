@@ -14,14 +14,31 @@
         width: 480px;
     }
 
-@media screen and (min-width: 768px){
-    width: 768px;
-}
 @media screen and (min-width: 1200px){
     width: 1200px;
 }
-}          
 
+}          
+@media screen and (min-width: 768px){
+    .conteiner-fotter{
+        width: 768px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .conteiner-fotter{
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+
+
+
+}
 .conteiner-portfolio{
     width: 100%;
     padding-left: 15px;

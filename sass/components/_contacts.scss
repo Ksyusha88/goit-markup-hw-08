@@ -23,6 +23,12 @@
         margin-bottom: 21px;
     }
 
+    @media screen and (min-width: 1200px){
+        display: flex;
+        margin-left: 270px;
+    }
+
+
     &__item:not(:last-child){
         margin-right: 30px;
 
