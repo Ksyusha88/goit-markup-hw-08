@@ -1106,6 +1106,23 @@ textarea {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .fotter {
+    font-style: normal;
+    font-size: 14px;
+    background-color: #2F303A;
+    margin-top: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .fotter-list {
+    font-size: 14px;
+    line-height: 0.6;
+    text-align: center;
+    margin-top: 60px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .fotter {
     font-style: normal;
@@ -1339,9 +1356,6 @@ textarea {
   .subscription-form {
     position: relative;
     margin-top: 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1522,6 +1536,9 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 0px;
   margin-bottom: 0px;
   margin: -15px;
@@ -1541,10 +1558,15 @@ textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  width: 210px;
   height: 90px;
   -webkit-transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
           transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .client-brand__list {
+    width: 210px;
+  }
 }
 
 .client-brand__list:hover, .client-brand__list:focus {
@@ -1645,6 +1667,46 @@ textarea {
     fill: #afb1b8;
     -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .conteiner-features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .features {
+    margin: 0px;
+    padding: 0px;
+  }
+  .features-title {
+    margin-top: 30px;
+    text-align: center;
+    color: #212121;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .features-text {
+    color: #757575;
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
+  .features-list {
+    list-style: none;
+  }
+  .features-list::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .features-list:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
